@@ -146,6 +146,33 @@ img{
     width: 100%;
 }
 
+.jogos ul a:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.about{
+    width: 100%;
+    height: 31.25em;
+    background-color: var(--blue);
+}
+
+.about-angulation{
+    width: 100%;
+    height: 25em;
+    background-color: var(--background);
+    transform: skewY(-3deg);
+    
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 74.93em)/* 1199px /16 */{
 }
 
