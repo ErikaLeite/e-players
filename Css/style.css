@@ -250,6 +250,38 @@ img{
     background-color: #1E1C21;
 }
 
+/* inicio ASIDE */
+.futuras{
+    width: 15em;/* 240px */
+    height: 48.4em;/* 750px */
+    background-color: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    box-shadow: 1px 1px 20px 4px #000000;
+    font-family: var(--font2);
+    color: #fff;
+    float: right;
+    margin-left: 5em;
+}
+
+.partida2 p{
+    text-align: center;
+    font-size: 1em;
+}
+
+.partida-futura{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.8em;
+    margin-bottom: 2em;
+    font-size: 1.12em;
+    text-transform: uppercase;
+}
+.partida-futura img{
+    width: 2em;
+}
+
+/* TÉRMINO ASIDE */
+
 .titulo{
     color: #fff;
     font-family: var(--font2);
@@ -261,7 +293,8 @@ img{
     font-family: var(--font2);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    /* position: relative;  */
 }
 
 .conteudo-news h2{
@@ -274,7 +307,8 @@ img{
     width: 14.8125em;/* 364px */
     height: 22.75em;/* 237px */
     background-color: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-box-shadow: 1px 1px 20px 4px #000000;
+    box-shadow: 1px 1px 20px 4px #000000;
+    margin-bottom: 3em;
 }
 .card article{
     margin: 1em;
