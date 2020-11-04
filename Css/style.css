@@ -255,7 +255,7 @@ img{
 .futuras{
     width: 15em;/* 240px */
     height: 48.4em;/* 750px */
-    background-color: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
     box-shadow: 1px 1px 20px 4px #000000;
     font-family: var(--font2);
     color: #fff;
@@ -280,14 +280,19 @@ img{
 .partida-futura img{
     width: 2em;
 }
-
 /* TÉRMINO ASIDE */
 
 .titulo{
+    width: 92%;
     color: #fff;
     font-family: var(--font2);
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .conteudo-news{
     color: #fff;
@@ -301,23 +306,24 @@ img{
 .conteudo-news h2{
     font-size: 2em;
     margin-bottom: 1em;
+    margin-right: 12em;
     
 }
 
 .card{
     width: 14.8125em;/* 364px */
     height: 22.75em;/* 237px */
-    background-color: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
     box-shadow: 1px 1px 20px 4px #000000;
     margin-bottom: 3em;
 }
 .card article{
     margin: 1em;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 1em;
 }
 
-.logo{
+/* .logo{
     height: 7em;
     display: flex;
     justify-content: space-between;
@@ -350,11 +356,80 @@ img{
 
 .p-rodape{
     font-size: 0.875em;
+} */
+
+.rodape{
+    padding: 1em 0;
+    color: #fff;
 }
+
+.links-footer{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.links h2{
+    font-family: var(--font);
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+}
+
+.links li{
+    margin-left: 1.5em;
+}
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logorodape{
+    max-width: 15em;
+}
+
+.sociais{
+    width:33%
+}
+
+.news-letter h2{
+    font-size: 1em;
+}
+
+.news-letter form{
+    display: flex;
+}
+
+.news-letter input[type="email"]{
+    width: 14em;
+    height: 2.5em;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.news-letter input[type="email"]::placeholder{
+    color: rgba(128, 128, 128, 0.589);
+}
+
+.news-letter input[type="submit"]{
+    width: 10.75em;
+    height: 2.5em;
+    font-size: 1em;
+    background-color: #8326ef;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.siga-nos{
+    margin-top: 1em;
+}
+
 
 
 @media screen and (max-width: 74.93em)/* 1199px /16 */{
 }
+
+/* 61.9375em  -  991px */
 
 @media screen and (max-width: 47.93em)/* 767px /16 */ {
 
@@ -363,3 +438,4 @@ img{
 @media screen and (max-width: 35.93em)/* 575px /16 */{
 
 }
+/* 320px */

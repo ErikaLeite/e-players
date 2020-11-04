@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Configuração para padronizar e facilitar a ultilização da paleta de cores e fontes para o css  */
+:root{
+    --background:#000000;
+    --red:#C20000;
+    --blue:#001F70;
+    --gradient:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --font:'Titillium Web', sans-serif;
+    --font2:'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* em tags nativas do sistema não é necessário inserir o ponto para que seja reconhecido no css */
+body{
+    font-family: var(--font);
+    background-color: var(--background);
+    font-size: 16px;
+}
+
+img{
+    width: 100%;
+}
+
+.topo{
+    width: 100%;
+    height: 5em;
+    /* background-color: grey; */
+    /* font-size: 16px; */
+    /*em considera a altura da fonte definida no código 
+    rem pega o padrão do navegador é de 16px */
+}
+.content{
+    width: 80%;
+    max-width: 75em;/* 1200px /16 */    
+    height: 100%;
+    margin: auto;
+    color: #fff;
+    /* background-color: rgb(248, 173, 143);     */
+}
+
+.flex-center-bt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo img{
+    max-width: 19em;
+}
+
+.menu{
+    width: 100%;
+    max-width: 50em;      
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu a{
+    color: #fff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.9em 0.5em;
+}
+
+.menu a:hover{
+    background-color: var(--red);
+}
+
+#menu-bars{
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+    background-color: grey;
+}
+
+.banner-position{
+    width: 100%;
+    max-width: 100%;
+    /* background-color: rgba(238, 130, 238, 0.466); */
+    position: absolute;
+    top: 0;
+    margin-top: 7.5%;/* foi necessário inserir um margin-top, pois os elemntos não estavam ficando na posição como o exemplo do prof */
+}
+
+.banner-content{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    /* background-color: rgba(255, 255, 0, 0.534); */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-text{
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text h1{
+    font-size: 5em;
+}
+
+.banner-text p{
+    font-size: 1.9em;/* aumentei a fonte em 0.3em para alinhar-se com o h1 */
+    color: white;
+}
+
+.banner-text a{
+    font-size: 1.87em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--red);
+    padding: 0.5em 0.8em;
+    border-radius: 0.3em;
+    margin-top: 1em;
+}
+
+.banner img{
+    width:100%;
+    max-width: 25em;
+}
