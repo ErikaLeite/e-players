@@ -58,14 +58,16 @@ img{
 
 .menu{
     width: 100%;
-    max-width: 50em;      
+    max-width: 50em;
+    /* background-color: aqua;       */
 }
 
 .menu ul{
     list-style-type: none;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    
     
 }
 
@@ -96,7 +98,8 @@ img{
     /* background-color: rgba(238, 130, 238, 0.466); */
     position: absolute;
     top: 0;
-    margin-top: 7.5%;/* foi necessário inserir um margin-top, pois os elemntos não estavam ficando na posição como o exemplo do prof */
+    margin-top: 7.5%;
+    /* foi necessário inserir um margin-top, pois os elemntos não estavam ficando na posição como o exemplo do prof */
 }
 
 .banner-content{
@@ -323,41 +326,6 @@ img{
     margin-bottom: 1em;
 }
 
-/* .logo{
-    height: 7em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--font2);
-}
-
-.links-uteis{
-    width: 33.33%;
-    font-size: 0.75em; 
-}
-
-.lista-rodape{
-    list-style-type: none;
-}
-
-.lista-rodape h3{
-    margin-bottom: 1em;
-}
-
-.lista-rodape a{
-    color: #fff;
-    text-decoration:none;
-    
-}
-
-.logo img{
-    width: 55%;
-}
-
-.p-rodape{
-    font-size: 0.875em;
-} */
-
 .rodape{
     padding: 1em 0;
     color: #fff;
@@ -426,16 +394,186 @@ img{
 
 
 
-@media screen and (max-width: 74.93em)/* 1199px /16 */{
+@media screen and (min-width: 74.9375em) and (max-width:88.125em)/* 1224px /16 */{
+    .topo{
+        height: 3.75em;
+    }
+    .menu{
+        width: 60%;
+        /* background-color: brown; */
+    }
+
+    .menu ul{
+        width: 100%;
+        max-width: 600px;
+    }
+    .menu li{
+        font-size: 12px;
+    }
+    
+    .banner-text h1{    
+        font-size: 4em;        
+    }
+
+    .banner-text p{
+        font-size: 1.55em;
+    }
+
+    .banner-text a{
+        font-size: 1.45em;
+    }
+
+    .jogos a img{
+        max-width: 10em;
+    }
+
+    .about-position img{
+        max-width: 27em;
+    }
+
+    .about-text h2{
+        font-size: 2em;
+    }
+
+    .about-text p{
+        font-size: 1.2em;
+    }
+
+    .jogos-aovivo, .jogos-embreve{
+        font-size: 1.6em;
+    }
+    .jogos-embreve{
+        margin-left: 1em;
+    }
+
+    .futuras{
+        margin-left: 1.5em;
+    }
+
+    .card{
+        width: 13.5em;
+    }
+
+    .news-letter h2{
+        font-size: 0.85em;
+        margin-bottom: 0.5em;
+    }
+
+    .news-letter input[type="email"], .news-letter input[type="submit"]{
+        height: 3.15em;
+        font-size: 0.8em;
+    }
 }
 
 /* 61.9375em  -  991px */
 
-@media screen and (max-width: 47.93em)/* 767px /16 */ {
+@media screen and (max-width: 47.9375em)/* 767px /16 */ {   
+     
+    .topo img{
+        max-width: 15em;
+    }
+
+    .menu{
+        max-width: 12.5em;
+    }
+
+    .menu ul{
+        display: block;
+        flex-direction: column;
+        /* z-index:99; */
+    }
+
+    .menu a{
+        /* margin-top: 1em;
+        margin-bottom: 1em; */
+        padding: 0.4em 0.25em;
+    }
+
+    .banner-position{
+        height: 37em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background-color: #0505054d;
+    }
+
+    .banner{
+        background-size: cover;
+    }
+
+    .banner-content{
+        justify-content: center;        
+    }
+        
+    .banner-text{
+        width: 100%; 
+        max-width: 37.5em; /* aumentei o espaço ocupado pelo titulo para 600px */
+        text-align: center;
+    }
+
+    .banner-content h1{ 
+        max-width: 31.25em; /* aumentei o espaço ocupado pelo titulo para 600px */
+        font-size: 6em;
+        margin-top: 2.5em;
+    }
+
+    .banner-text p{
+        font-size: 2em;        
+    }
+
+    .banner-text a{
+        font-size: em;        
+    }
+
+    .jogos > .flex-center-bt{
+        height: 7em;   
+    }
+    .jogos a img{
+        /* margin-left: 1em; */
+    }
+
+    .about-position{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .about-position>.content{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        /* background-color: rosybrown; */
+    }
+
+    .about-position>.content img{
+        max-width: 23em;
+        margin-top: 3.6em;
+        margin-left: 5em;
+    }
+
+    .about-text{
+        width: 100%;
+        max-width: 38.3493375em;
+        position: absolute;
+        text-align: center;
+        background-color: #00000052;
+        margin-top: 4.1em;
+        margin-right: 5em;
+        /* tentar centralizar o elemento para remover as bordas */
+    }
+
+    .about-text h2{
+        font-size: 2em;       
+    }
+
+    .about-text p{
+        font-size: 1.35em;
+    }
+
 
 }
 
-@media screen and (max-width: 35.93em)/* 575px /16 */{
+@media screen and (max-width: 35.9375em)/* 575px /16 */{
 
 }
 /* 320px */
