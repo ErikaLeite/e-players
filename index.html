@@ -31,7 +31,8 @@
             <picture>
                 <source media="(min-width:74.9375em)" srcset="img/Banner1440.jpg">
                 <source media="(min-width:47.9375em)" srcset="img/Banner768.jpg">
-                <source media="(min-width:35.9375em)" srcset="img/Banner576.jpg">            
+                <source media="(min-width:35.9375em)" srcset="img/Banner576.jpg">
+                    <source media="(min-width: 20em)" srcset="img/Banner320.jpg">           
                 <img src="img/Banner1920.jpg" alt="banner principal com imagem dos pilotos de Fórmula 1">
             </picture>
             <div class="banner-position">
@@ -68,14 +69,14 @@
                         </p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cupiditate magni aliquid cumque eius harum iste mollitia. At odio voluptates, harum modi doloremque, dolorem suscipit est delectus ratione voluptatibus possimus.</p>
                     </div>
-                    <img src="/img/lol-person.png" alt="Personagem de League of Legends">                   
+                    <img src="/img/lol-person.png" alt="Personagem de League of Legends" class="lol">                   
                 </div>                
             </div>    
         </section>
-        <section class="jogos">
+        <section class="jogos ao-vivo">
            <div class="content flex-center-bt">
                <div class="jogos-aovivo">
-                   <h2>Ao<br>Vivo</h2>
+                   <h2>Ao <br>Vivo</h2>
                    <div class="partida">
                        <div class="time1">
                            <p>CP</p>
@@ -84,13 +85,13 @@
                        <p>VS</p>
                        <div class="time2">
                            <img src="img/FLA 1.png" alt="logo time 4">
-                           <p>FLA</p>
+                           <p>FL</p>
                        </div>
                    </div>
 
                </div><!-- fim jogos ao vivo -->
                <div class="jogos-embreve">
-                   <h2>Em<br>Breve</h2>
+                   <h2>Em <br>Breve</h2>
                    <div class="partida">
                     <div class="time1">
                         <p>SP</p>
@@ -110,7 +111,7 @@
                     <p>VS</p>
                     <div class="time2">
                         <img src="img/FLA 1.png" alt="logo time 4">
-                        <p>FLA</p>
+                        <p>FL</p>
                     </div>
                 </div>
                </div>
@@ -119,7 +120,7 @@
         <section class="noticias">
             <div class="content">
                 <div class="titulo">
-                    <h2>Notícias</h2>
+                    <h2 class="h2-news">Notícias</h2>
                     <h2>Próximas<br>Partidas</h2>
                     <!-- aprimorar sessão de títulos -->
                 </div>
@@ -247,11 +248,13 @@
                     </ul>
                 </nav>
             </div>      
-            <img src="/img/logo.svg" alt="logo e-Players" class="logorodape">      
+            <div class="logo-rodape">
+                <img src="/img/logo.svg" alt="logo e-Players" class="logorodape">
+            </div>      
             <div class="sociais">
                 <div class="news-letter">
                     <h2>Faça parte do nosso clã, receba notícias e promoções!</h2>
-                    <form action="#">
+                    <form action="#" class="formulario">
                         <input type="email" name= "email" placeholder="E-mail">
                         <input type="submit" name= "enviar" value="Cadastrar">
                     </form>
